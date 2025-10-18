@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+         background-color:lemonchiffon;
+        margin: 0; 
+        }
         .navbar{
             display:flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px 30px;
+            background-color:lightseagreen;
         }
         .logo-parent{
-            width:10%;
+            width:20%;
         }
         .navbar-links {
                      width: 70%;
@@ -20,11 +25,11 @@
                      justify-content: space-evenly;
         }
         .navbar-links a{
-                     color: blue;
+                     color: black;
                      text-decoration: none;
                      font-size: 1.3rem;
         }
-        .Lets-talk{
+        .contact-me{
                  background-color: black;
                  color: white;
                  padding: 10px;
@@ -33,30 +38,77 @@
                  text-align: center;
                  border-radius: 25px;
         }
-        .Lets-talk:hover{
+        .contact-me:hover{
                  background-color: white;
                  color:black;
                  border: 1px solid black;
     
         }
+        .hero {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               padding: 40px;
+               min-height: calc(100vh - 70px);
+               justify-content: space-between;
+       }
+
+         .text {
+             width: 90%;
+             max-width: 700px;
+             text-align: center;
+             margin-bottom: 30px;
+             
+    }
+
+    .text h1 {
+      font-size: 30px;
+       margin-bottom: 70px;
+
+    }
+
+    .text p {
+      font-size: 18px;
+    }
+
+    .photo img {
+      width: 270px;
+      height: 270px;
+      border-radius: 50%;
+      margin-left: 1000px;
+      margin-top: -190px;
+    }
+
     </style>
 </head>
 <body>
     <nav class="navbar">
         <a href="" class="logo-parent">
-        <img src= "./logo.png"width="15%" alt="">
+        <img src= "./image.png" width="15%" alt="">
     </a>
     <div class="navbar-links">
     <a href="">Home</a>
     <a href="">About</a>
-    <a href="">Service</a>
     <a href="">Skill</a>
-    <a href="">Work</a>
-    <a href="">pricing</a>
-    <a href="">testimonical</a>
-    </div>
-    <a href=""class="Lets-talk">Lets Talk</a>
-  </nav>
+    <a href="">experience</a>
+    <a href="">Achievements</a>
     
+    </div>
+    <a href=""class="contact-me">contact me</a>
+  </nav>
+     <div class="main">
+    <div class="text">
+      <h1>I'm a Web Developer</h1>
+      <p>I enjoy turning ideas into interactive web experiences that are both visually appealing and easy to use.</p>
+      <p>From smooth animations to responsive layouts, I focus on making websites.</p>
+      <p>
+        I'm constanly exploring new trends in web development and love experimenting with fresh ideas.
+      </p>
+    </div>
+    <div class="photo">
+      <img src="./photo.jpg" alt="My Photo">
+    </div>
+  </div>
+
     </body>
 </html>
